@@ -131,6 +131,8 @@ bool IsRunningInEmulator();
 
 bool FsyncDirectory(const std::string& dirname);
 
+status_t WaitForFile(const char* filename, std::chrono::nanoseconds timeout);
+
 }  // namespace vold
 }  // namespace android
 
